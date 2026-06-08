@@ -1,21 +1,30 @@
 {
-  "name": "create-never-context",
+  "name": "react-context-default-error",
   "version": "0.0.0",
-  "description": "A starter for creating a TypeScript package.",
-  "homepage": "https://github.com/author/library#readme",
+  "description": "Create throwing default values for React contexts.",
+  "keywords": [
+    "context",
+    "default-value",
+    "error",
+    "react",
+    "typescript"
+  ],
+  "homepage": "https://github.com/leonsilicon/react-context-default-error#readme",
   "bugs": {
-    "url": "https://github.com/author/library/issues"
+    "url": "https://github.com/leonsilicon/react-context-default-error/issues"
   },
   "license": "MIT",
-  "author": "Author Name <author.name@mail.com>",
+  "author": "Leon Si <leon@leonsilicon.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/author/library.git"
+    "url": "git+https://github.com/leonsilicon/react-context-default-error.git"
   },
   "files": [
     "dist"
   ],
   "type": "module",
+  "sideEffects": false,
+  "types": "./dist/index.d.mts",
   "exports": {
     ".": "./dist/index.mjs",
     "./package.json": "./package.json"
