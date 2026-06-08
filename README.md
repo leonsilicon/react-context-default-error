@@ -29,7 +29,7 @@ interface AuthContextValue {
   signOut: () => void;
 }
 
-const AuthContext = createContext<AuthContextValue>(defaultError<AuthContextValue>("AuthContext"));
+const AuthContext = createContext(defaultError<AuthContextValue>("AuthContext"));
 
 export function useAuth() {
   return useContext(AuthContext);
@@ -47,7 +47,7 @@ AuthContext can only be accessed within a <AuthContextProvider>
 Pass `errorMessage` when you want complete control over the thrown message.
 
 ```tsx
-const AuthContext = createContext<AuthContextValue>(
+const AuthContext = createContext(
   defaultError<AuthContextValue>("AuthContext", {
     errorMessage: "useAuth must be used inside AuthContextProvider.",
   }),

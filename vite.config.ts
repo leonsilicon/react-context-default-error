@@ -4,6 +4,11 @@ export default defineConfig({
   staged: {
     "*": "vp check --fix",
   },
+  test: {
+    typecheck: {
+      enabled: true,
+    },
+  },
   pack: {
     dts: {
       tsgo: true,
